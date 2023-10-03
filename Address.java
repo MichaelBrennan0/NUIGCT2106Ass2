@@ -14,7 +14,7 @@ private String county;
 private String country;
 private String eircode;
 
-public Address(String line1, String line2, String city, String county,String country,String eircode){
+public Address(String country, String eircode, String county, String city,String line2,String line1){
 this.line1 = line1;
 this.line2 = line2;
 this.city = city;
@@ -22,6 +22,22 @@ this.county = county;
 this.country = country;
 this.eircode = eircode;
 }
+
+//setter
+public void setAddress(String country, String eircode, String county, String city,String line2,String line1){
+this.line1 = line1;
+this.line2 = line2;
+this.city = city;
+this.county = county;
+this.country = country;
+this.eircode = eircode;
+}
+
+//getter
+public String getAddressString(){
+return country + county + city + line2 +line1+"\t" + eircode;
+}
+
 
 
 }

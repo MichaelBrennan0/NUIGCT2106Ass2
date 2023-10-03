@@ -5,6 +5,8 @@
  * @version (a version number or a date)
  */
 import java.util.ArrayList;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Cart
 {
@@ -14,7 +16,7 @@ private ArrayList<Item> cartList = new ArrayList<Item>();
 
 //constructor  
 public Cart(){
-;}
+    Date creationDate = java.time.LocalDate.now();}
 
 
 public void addItem(int itemID,int amount){

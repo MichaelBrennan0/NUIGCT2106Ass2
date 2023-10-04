@@ -35,7 +35,7 @@ this.eircode = eircode;
 
 //getter
 public String getAddressString(){
-return country + county + city + line2 +line1+"\t" + eircode;
+return country + county + city + line2 + line1 + "\t" + eircode;
 }
 
 

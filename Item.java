@@ -29,7 +29,7 @@ this.description = description;
 
 
 //this creates the test items and adds them to their ArrayList so that they are easier to find using their ID
-public void testItemSetup(){
+public static void testItemSetup(){
 
 Item uF10 = new Item("10uF", 0.17F, "Electrolytic capacitor");
 itemIDlist.add(uF10);
@@ -55,11 +55,12 @@ public void setDescription(String description){this.description = description;}
 public String getName(){return name;}
 public float getPrice(){return price;}
 public String getDescription(){return description;}
+
 public static Item getItemFromID(int id){
 return itemIDlist.get(id);}
-public float getPriceFromID(){return 1.0F;}
 
 public static int getItemCount(){return itemCount;}      
+
 
 
 

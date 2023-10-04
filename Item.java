@@ -24,6 +24,7 @@ itemCount++;
 this.name = name;
 this.price = price;
 this.description = description;
+
 } 
 
 
@@ -55,8 +56,11 @@ public String getName(){return name;}
 public float getPrice(){return price;}
 public String getDescription(){return description;}
 public static Item getItemFromID(int id){
-return itemIDlist.get(id);      
-}
+return itemIDlist.get(id);}
+public float getPriceFromID(){return 1.0F;}
+
+public static int getItemCount(){return itemCount;}      
+
 
 
 }

@@ -23,10 +23,9 @@ creationDate = LocalDateTime.now();
 
 public void addItem(int itemID,int amount){
 if(lockState == false){
-for(int i = 0; i > amount; i++){
-int a = cartList.get(itemID);
+int a = cartList.get(itemID) + amount;
 cartList.set(itemID, a);
-}}else {System.out.println("Cart has been locked, No items have been added.");} 
+}else {System.out.println("Cart has been locked, No items have been added.");} 
 }
 
 public void cartLock(){lockState = true;}

@@ -7,24 +7,23 @@
 import java.util.ArrayList;
 public class Item
 {
-//itemCount is used to automatically increment the item id.
+//itemCount is used to keep track of the number of different items and automatically increment the item id.
 private static int itemCount = 0;
 private int id;
+
 private String name;
 private float price;
 private String description;
+// Array list so that an item can be called from its item id as the position in the array list is the same as the items id.
 private static ArrayList<Item> itemIDlist = new ArrayList<>();
 
 //constructor
 public Item(String name, float price, String description){
-
 this.id = itemCount;
 itemCount++;
-
 this.name = name;
 this.price = price;
 this.description = description;
-
 } 
 
 
@@ -47,19 +46,39 @@ itemIDlist.add(henry20uH);
 
 
 //setters
-public void setName(String name){this.name = name;}
-public void setPrice(float price){this.price = price;}
-public void setDescription(String description){this.description = description;}
+public void setName(String name){
+    this.name = name;
+}
+public void setPrice(float price){
+    this.price = price;
+}
+public void setDescription(String description){
+    this.description = description;
+}
+
 
 //getters
-public String getName(){return name;}
-public float getPrice(){return price;}
-public String getDescription(){return description;}
+public String getName(){
+    return name;
+}
 
+public float getPrice(){
+    return price;
+}
+
+public String getDescription(){
+    return description;
+}
+
+// method to return an item when called by is id.
 public static Item getItemFromID(int id){
-return itemIDlist.get(id);}
+return itemIDlist.get(id);
+}
 
-public static int getItemCount(){return itemCount;}      
+//method to get the count of how many items have been created,used in for loops mostly
+public static int getItemCount(){
+    return itemCount;
+}      
 
 
 

@@ -4,7 +4,9 @@
  * @author Michaeal Brennan     I.D: 22759599
  * @version 1.0                 26/09/23
  */
+
 import java.util.ArrayList;
+
 public class Item
 {
 //itemCount is used to keep track of the number of different items and automatically increment the item id.
@@ -56,7 +58,6 @@ public void setDescription(String description){
     this.description = description;
 }
 
-
 //getters
 public String getName(){
     return name;
@@ -75,11 +76,10 @@ public static Item getItemFromID(int id){
 return itemIDlist.get(id);
 }
 
-//method to get the count of how many items have been created,used in for loops mostly
+//method to get the count of how many items have been created, used in for loops mostly
 public static int getItemCount(){
     return itemCount;
 }      
-
 
 
 

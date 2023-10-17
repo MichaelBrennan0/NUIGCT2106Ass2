@@ -1,9 +1,17 @@
 #BlueJ class context
 comment0.target=Payment
-comment1.params=cardNumber\ csv\ expDate\ cardName
-comment1.target=Payment(int,\ int,\ java.time.LocalDateTime,\ java.lang.String)
+comment1.params=cardNumber\ ppn\ expDate\ cardHolder
+comment1.target=Payment(java.lang.String,\ java.lang.String,\ java.time.LocalDateTime,\ java.lang.String)
 comment2.params=
-comment2.target=boolean\ checkDate()
-comment3.params=country\ eircode\ county\ city\ line2\ line1
-comment3.target=void\ setBillingAddress(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
-numComments=4
+comment2.target=boolean\ checkNumberLength()
+comment3.params=
+comment3.target=boolean\ checkDate()
+comment4.params=
+comment4.target=boolean\ checkPpn()
+comment5.params=
+comment5.target=boolean\ isValid()
+comment6.params=country\ eircode\ county\ city\ line2\ line1
+comment6.target=void\ setBillingAddress(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment7.params=
+comment7.target=Address\ getBillingAddress()
+numComments=8
